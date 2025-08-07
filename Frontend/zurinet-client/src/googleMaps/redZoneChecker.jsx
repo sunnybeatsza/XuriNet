@@ -2,7 +2,17 @@ import React, { useState } from "react";
 
 const hardcodedRedZones = [
   { lat: -26.2041, lng: 28.0473, radius: 2 }, // Johannesburg CBD
-  { lat: -26.1952, lng: 28.0341, radius: 1.5 }, // Hillbrow
+  { lat: -26.1952, lng: 28.0341, radius: 1.5 }, // Hillbrow, Johannesburg
+  { lat: -25.7461, lng: 28.1881, radius: 1.8 }, // Pretoria CBD
+  { lat: -29.8587, lng: 31.0218, radius: 2 }, // Durban Central
+  { lat: -33.9249, lng: 18.4241, radius: 1.7 }, // Cape Town CBD
+  { lat: -26.2708, lng: 27.8586, radius: 1.2 }, // Soweto
+  { lat: -26.1458, lng: 28.0416, radius: 1.5 }, // Alexandra Township
+  { lat: -29.1211, lng: 26.214, radius: 1.5 }, // Bloemfontein CBD
+  { lat: -32.9917, lng: 27.8715, radius: 1.2 }, // East London CBD
+  { lat: -33.0153, lng: 27.9116, radius: 1.4 }, // Mdantsane (near East London)
+  { lat: -25.6848, lng: 27.2416, radius: 1.3 }, // Rustenburg Central
+  { lat: -24.6544, lng: 25.9086, radius: 1.5 }, // Mafikeng CBD
 ];
 
 // Environment variables

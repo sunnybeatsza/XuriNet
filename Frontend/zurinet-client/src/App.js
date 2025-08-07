@@ -8,6 +8,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="App-header">Welcome to ZuriNet</div>
       <div className="redzone-checker-container">
         <RedZoneChecker setMapCoords={setMapCoords} />
       </div>
