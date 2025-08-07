@@ -1,11 +1,26 @@
-const express = require("express");
+import express from "express";
+import {
+  fetchGBVArticles,
+  extractLocationsWithSpaCy,
+} from "./googleMaps/redZoneData.js";
+
 const app = express();
 
-// default home route
-app.get("/", (request, response) => {
-  response.send("Hello World!, Server is live");
+app.get("/redZoneData", async (req, res) => {
+  try {
+    const articles = await fetchGBVArticles();
+    const locations = await extractLocationsWithSpaCy(articles);
+    const ranked = rankLocations(locations, articles);
+
+    res.json({ redZones: ranked });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Error processing red zone data");
+  }
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on http://localhost:3000");
+app.get("/", (req, res) => {
+  res.send("Hello World!");
 });
+
+app.listen(3000, () => console.log("Server running on port 3000"));

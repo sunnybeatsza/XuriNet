@@ -1,33 +1,36 @@
-.App {
-  min-height: 80vh;
-  background: #f7f7fa;
+.App-container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column; /* Stack header and content vertically */
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: #f7f7fa;
   font-family: "Segoe UI", Arial, sans-serif;
-  padding: 48px 0;
-  gap: 48px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 .App-header {
+  width: 100%;
   background-color: #ffffff;
   color: #222;
   padding: 16px 32px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   text-align: center;
-  margin-bottom: 24px;
+  position: sticky; /* stays visible when scrolling */
+  top: 0;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+.App-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px; /* space between form and map */
+  padding: 32px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .redzone-checker-container {
@@ -35,56 +38,8 @@
   padding: 24px 32px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  width: 350px;
-  min-width: 300px;
-  margin: 0;
-}
-
-.redzone-checker-container h2 {
-  margin-bottom: 16px;
-  color: #222;
-}
-
-.redzone-checker-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.redzone-checker-container input[type="text"] {
-  padding: 8px 12px;
-  border: 1px solid #bbb;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.redzone-checker-container button {
-  padding: 8px 0;
-  border: none;
-  border-radius: 5px;
-  background: #1976d2;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 4px;
-  transition: background 0.2s;
-}
-
-.redzone-checker-container button[type="button"] {
-  background: #43a047;
-}
-
-.redzone-checker-container button:hover {
-  background: #125ea2;
-}
-
-.redzone-checker-container button[type="button"]:hover {
-  background: #357a38;
-}
-
-.redzone-checker-container h2:last-child {
-  margin-top: 18px;
-  font-size: 1.1rem;
+  width: 100%;
+  max-width: 400px;
 }
 
 .map-container {
@@ -92,13 +47,13 @@
   justify-content: center;
   align-items: center;
   height: 500px;
-  min-width: 600px;
-  background: transparent;
+  width: 100%;
+  max-width: 800px;
 }
 
 .google-map {
-  width: 600px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   overflow: hidden;
