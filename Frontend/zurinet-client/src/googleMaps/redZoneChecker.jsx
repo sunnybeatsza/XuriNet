@@ -71,6 +71,42 @@ const RedZoneChecker = ({ setMapCoords }) => {
     );
   };
 
+  const checkMyLocation = (event) => {
+    event.preventDefault();
+    setStatus("Getting your location...");
+    if (!navigator.geolocation) {
+      setStatus("Geolocation is not supported by your browser.");
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const coords = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
+        setMapCoords(coords);
+        const isInRedZone = hardcodedRedZones.some((zone) => {
+          const distance = getDistance(
+            coords.lat,
+            coords.lng,
+            zone.lat,
+            zone.lng
+          );
+          return distance <= zone.radius;
+        });
+        setStatus(
+          isInRedZone
+            ? "🚨 You are in a red zone! High Risk Area."
+            : "✅ You are not in a red zone."
+        );
+      },
+      (error) => {
+        setStatus("Unable to retrieve your location.");
+      }
+    );
+  };
+
   return (
     <div>
       <h2>Red Zone Checker</h2>
@@ -83,6 +119,9 @@ const RedZoneChecker = ({ setMapCoords }) => {
           required
         />
         <button type="submit">Check location</button>
+        <button type="submit" onClick={checkMyLocation}>
+          Check my location
+        </button>
       </form>
       <h2>{status}</h2>
     </div>

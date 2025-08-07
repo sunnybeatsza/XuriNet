@@ -8,7 +8,7 @@ const libraries = ["places"];
 const apiKey = process.env.REACT_APP_Maps_API_KEY;
 
 // Accept props for lat, lng, zoom
-const MapContent = ({ lat = -26.2041, lng = 28.0473, zoom = 15.5 }) => {
+const MapContent = ({ lat = -26.2041, lng = 28.0473, zoom = 16 }) => {
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: apiKey,
     libraries,
