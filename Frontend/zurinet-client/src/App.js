@@ -4,7 +4,9 @@ import MapContent from "./googleMaps/loadMap";
 function App() {
   return (
     <div className="App">
-      <MapContent />
+      <div className="map-container">
+        <MapContent />
+      </div>
     </div>
   );
 }
