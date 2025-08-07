@@ -4,6 +4,8 @@ import {
   extractLocationsWithSpaCy,
 } from "./googleMaps/redZoneData.js";
 
+import { rankLocations } from "./googleMaps/rankLocations.js";
+
 const app = express();
 
 app.get("/redZoneData", async (req, res) => {
