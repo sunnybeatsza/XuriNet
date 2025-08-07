@@ -7,8 +7,8 @@ const libraries = ["places"];
 // Environment variables
 const apiKey = process.env.REACT_APP_Maps_API_KEY;
 
-// Map component
-const MapContent = (lat = -26.2041, lng = 28.0473, zoom = 10) => {
+// Accept props for lat, lng, zoom
+const MapContent = ({ lat = -26.2041, lng = 28.0473, zoom = 15.5 }) => {
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: apiKey,
     libraries,
@@ -23,7 +23,7 @@ const MapContent = (lat = -26.2041, lng = 28.0473, zoom = 10) => {
 
   // If everything is loaded, render the map
   return (
-    <GoogleMap mapContainerClassName="google-map" zoom={10} center={center}>
+    <GoogleMap mapContainerClassName="google-map" zoom={zoom} center={center}>
       <Marker position={center} />
     </GoogleMap>
   );

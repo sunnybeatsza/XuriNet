@@ -5,15 +5,28 @@ const hardcodedRedZones = [
   { lat: -26.1952, lng: 28.0341, radius: 1.5 }, // Hillbrow
 ];
 
-//The idea is that a user will enter a location and the Geocoding API will find coordinates
-const fakeGeocode = async (location) => {
-  const locations = {
-    johannesburg: { lat: -26.2041, lng: 28.0473 },
-    hillbrow: { lat: -26.1952, lng: 28.0341 },
-    sandton: { lat: -26.1076, lng: 28.0567 },
-  };
+// Environment variables
+const apiKey = process.env.REACT_APP_Maps_API_KEY;
 
-  return locations[location.toLowerCase()] || null;
+//The idea is that a user will enter a location and the Geocoding API will find coordinates
+const geocodeLocation = async (location) => {
+  const response = await fetch(
+    `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
+      location
+    )}&key=${apiKey}`
+  );
+
+  const data = await response.json();
+  if (
+    data.status === "OK" &&
+    data.results &&
+    data.results[0] &&
+    data.results[0].geometry
+  ) {
+    const { lat, lng } = data.results[0].geometry.location;
+    return { lat, lng };
+  }
+  return null;
 };
 
 // You want to check if the user’s coordinates fall within a “radius” (e.g., 500 meters) of any red zone. That’s where the distance check comes in.
@@ -33,7 +46,7 @@ const getDistance = (lat1, lng1, lat2, lng2) => {
   return R * c;
 };
 
-const RedZoneChecker = () => {
+const RedZoneChecker = ({ setMapCoords }) => {
   const [location, setLocation] = useState("");
   const [status, setStatus] = useState("");
 
@@ -41,11 +54,13 @@ const RedZoneChecker = () => {
     event.preventDefault();
     setStatus("Checking...");
 
-    const coords = await fakeGeocode(location);
+    const coords = await geocodeLocation(location);
     if (!coords) {
       setStatus("Location not found");
       return;
     }
+
+    setMapCoords(coords);
 
     const isInRedZone = hardcodedRedZones.some((zone) => {
       const distance = getDistance(coords.lat, coords.lng, zone.lat, zone.lng);
