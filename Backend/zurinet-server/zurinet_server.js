@@ -9,27 +9,54 @@ const app = express();
 app.get("/redZoneData", async (req, res) => {
   try {
     console.log("Fetching GBV articles from South Africa...");
+    const SA_LOCATIONS = [
+      "south africa",
+      "johannesburg",
+      "pretoria",
+      "cape town",
+      "durban",
+      "soweto",
+      "hillbrow",
+      "alexandra",
+      "mamelodi",
+      "umlazi",
+      "khayelitsha",
+      "bloemfontein",
+      "rustenburg",
+      "gqeberha",
+    ];
 
     const articles = await fetchNews("everything", {
-      q: "gender based violence OR GBV OR domestic violence OR sexual violence AND (South Africa OR SA)",
+      q: "(gender based violence OR GBV OR domestic violence OR sexual violence) AND (South Africa OR Johannesburg OR Pretoria OR Cape Town OR Durban OR Soweto OR Hillbrow OR Alexandra OR Mamelodi OR Umlazi OR Khayelitsha OR Bloemfontein OR Rustenburg OR Gqeberha)",
       from: "2025-07-08",
       to: "2025-08-08",
       language: "en",
       sortBy: "relevancy",
       page: 1,
-      pageSize: 50, // Get more articles per request (max 100)
+      pageSize: 100,
     });
 
-    console.log(`Fetched ${articles.length} articles.`);
+    const validArticles = articles.filter((article) => {
+      if (
+        !(
+          article.title &&
+          article.description &&
+          article.content &&
+          article.content !== "[Removed]"
+        )
+      ) {
+        return false;
+      }
+      const combinedText = (
+        article.title +
+        " " +
+        article.description +
+        " " +
+        article.content
+      ).toLowerCase();
 
-    // Filter out articles that might not be relevant or have missing content
-    const validArticles = articles.filter(
-      (article) =>
-        article.title &&
-        article.description &&
-        article.content &&
-        article.content !== "[Removed]" // NewsAPI sometimes returns [Removed] for content
-    );
+      return SA_LOCATIONS.some((location) => combinedText.includes(location));
+    });
 
     console.log(`${validArticles.length} articles have valid content.`);
 
@@ -68,4 +95,4 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+app.listen(3001, () => console.log("Server running on port 3000"));
