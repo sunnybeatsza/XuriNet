@@ -2,6 +2,8 @@ import fetch from "node-fetch";
 import { spawn } from "child_process";
 import dotenv from "dotenv";
 
+dotenv.config();
+
 const NEWS_API_KEY = process.env.NEWS_API_KEY;
 
 export async function fetchGBVArticles() {

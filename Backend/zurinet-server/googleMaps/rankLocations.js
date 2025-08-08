@@ -1,4 +1,7 @@
 import fetch from "node-fetch";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const HF_API_KEY = process.env.HF_API_KEY; // your Hugging Face API token
 const HF_MODEL = "facebook/bart-large-mnli"; // zero-shot model
