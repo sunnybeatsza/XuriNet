@@ -1,10 +1,14 @@
 import fetch from "node-fetch";
 import { spawn } from "child_process";
+import dotenv from "dotenv";
 
-const NEWS_API_KEY = process.env.API_KEY;
+const NEWS_API_KEY = process.env.NEWS_API_KEY;
 
 export async function fetchGBVArticles() {
   const url = `https://newsapi.org/v2/everything?q=gender%20based%20violence%20OR%20crime%20in%20Africa&language=en&pageSize=10&apiKey=${NEWS_API_KEY}`;
+
+  console.log("HF key:", process.env.HF_API_KEY);
+  console.log("NewsAPI key:", process.env.NEWS_API_KEY);
 
   const response = await fetch(url);
   const data = await response.json();
