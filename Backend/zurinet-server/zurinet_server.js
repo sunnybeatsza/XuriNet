@@ -36,6 +36,8 @@ app.get("/redZoneData", async (req, res) => {
       pageSize: 100,
     });
 
+    console.log(articles);
+
     const validArticles = articles.filter((article) => {
       if (
         !(
@@ -95,4 +97,6 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.listen(3001, () => console.log("Server running on port 3000"));
+app.listen(3001, () =>
+  console.log("Server running on port http://localhost:3001/")
+);
