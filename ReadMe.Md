@@ -6,7 +6,7 @@ _An AI-powered platform to identify and alert users about high-risk areas for Ge
 
 ZuriNet is designed to enhance personal safety and awareness for users, especially women, by identifying and alerting them when they are in or near areas with a history of Gender-Based Violence (GBV) incidents.
 
-The application uses advanced **machine learning models** trained on:
+The application is going to be using the data below to train advanced **machine learning models**:
 
 - Licensed crime data
 - Public news reports
@@ -43,7 +43,7 @@ By combining multiple trusted data sources, the system detects **high-risk "Red 
 
 ## **Data Sources**
 
-The AI model is going trained and updated using:
+The AI model is going be trained and updated using:
 
 - **Licensed Crime Data** – Officially sourced and verified law enforcement records.
 - **Public News Reports** – Natural Language Processing (NLP) extracts location-based incident data.
