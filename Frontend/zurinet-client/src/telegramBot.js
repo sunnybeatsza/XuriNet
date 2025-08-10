@@ -2,7 +2,6 @@ const TelegramBot = require("node-telegram-bot-api");
 const token = process.env.TELEGRAM_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
-// Helper: static location to send (e.g., Johannesburg)
 const STATIC_LAT = -26.2041;
 const STATIC_LNG = 28.0473;
 
@@ -22,7 +21,6 @@ bot.on("message", (msg) => {
       bot.sendLocation(chatId, STATIC_LAT, STATIC_LNG);
       bot.sendMessage(chatId, "Here's a safe zone location you requested.");
     } else {
-      // Simple echo for unknown text
       bot.sendMessage(
         chatId,
         `You said: "${msg.text}". Send 'location' for a safe zone.`
@@ -31,13 +29,11 @@ bot.on("message", (msg) => {
   }
 
   if (msg.location) {
-    // When user shares location, reply with acknowledgement and coords
     const { latitude, longitude } = msg.location;
     console.log(`Received location from user: ${latitude}, ${longitude}`);
     bot.sendMessage(
       chatId,
       `Thanks for sharing your location:\nLatitude: ${latitude}\nLongitude: ${longitude}`
     );
-    // Here you could add logic to check if user is in a red zone or similar
   }
 });
