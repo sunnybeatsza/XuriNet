@@ -1,5 +1,5 @@
 const TelegramBot = require("node-telegram-bot-api");
-const token = "8424315758:AAFFg4I4G9dCndVnuJhqM9omoXA9AQI2b-U"; // Replace with your real token
+const token = ""; // Replace with your real token
 const bot = new TelegramBot(token, { polling: true });
 
 // Helper: static location to send (e.g., Johannesburg)
