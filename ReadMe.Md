@@ -1,4 +1,4 @@
-# **ZuriNet**
+# **XuriNet**
 
 _An AI-powered platform to identify and alert users about high-risk areas for Gender-Based Violence in South Africa._
 
