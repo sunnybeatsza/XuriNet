@@ -1,67 +1,38 @@
-// newsAPI.js
-const NEWS_API_KEY =
-  process.env.NEWS_API_KEY || "e111b3bcaa4e49819ffc6105a44fa68c"; // Replace with your actual API key
-const BASE_URL = "https://newsapi.org/v2";
+// Link to article = https://www.freecodecamp.org/news/make-api-calls-in-javascript/
 
-/**
- * Fetch news from NewsAPI
- * @param {string} endpoint - The NewsAPI endpoint ('everything', 'top-headlines', etc.)
- * @param {object} params - Query parameters for the API request
- * @returns {Promise<Array>} - Array of articles
- */
-async function fetchNews(endpoint, params = {}) {
-  try {
-    // Build query string from parameters
-    const queryParams = new URLSearchParams();
+// 1. API Construction
 
-    // Add API key
-    queryParams.append("apiKey", NEWS_API_KEY);
+// Define Inital API URL
+const Inital_API_URL = "https://newsapi.org/v2/everything"
 
-    // Add all other parameters
-    Object.entries(params).forEach(([key, value]) => {
-      if (value !== null && value !== undefined && value !== "") {
-        queryParams.append(key, value);
-      }
-    });
+// Define API query parameter
+const query = "?q=South Africa&"
 
-    const url = `${BASE_URL}/${endpoint}?${queryParams.toString()}`;
+// Define API Key
+const Final_API_URL = "apiKey=" + process.env.NEWS_API_KEY
 
-    console.log(
-      "Making request to NewsAPI:",
-      url.replace(NEWS_API_KEY, "[API_KEY_HIDDEN]")
-    );
 
-    const response = await fetch(url, {
-      method: "GET",
-      headers: {
-        "User-Agent": "NewsAPI-Client/1.0",
-      },
-    });
 
-    if (!response.ok) {
-      const errorData = await response.json();
-      throw new Error(
-        `NewsAPI Error: ${response.status} - ${
-          errorData.message || response.statusText
-        }`
-      );
-    }
+// 2. Make a GET request using the fetch API
+export async function getNews() {
+    try{
+        const response = await fetch(Final_API_URL)
 
-    const data = await response.json();
+        // if the response from the request is not ok, throw an error
+        if (!response.ok){
+            throw Error("There was issue with the request")
+        }
 
-    // Check if the response is successful
-    if (data.status !== "ok") {
-      throw new Error(`NewsAPI Error: ${data.code} - ${data.message}`);
-    }
+        // if the response is ok, return is as json.
+        const data = await response.json()
 
-    console.log(`Successfully fetched ${data.articles?.length || 0} articles`);
-    console.log(`Total results available: ${data.totalResults || 0}`);
-
-    return data.articles || [];
-  } catch (error) {
-    console.error("Error fetching news:", error.message);
-    throw error;
+        //for dev purposes, make sure to print it to check if response is correct.
+        console.log(data)
+        
+        }
+        //IMPORTANT = Always handles any errors throw in the code to avoid code crashes.
+        catch (error) {
+            console.error('Error:', error);
   }
 }
 
-export default fetchNews;

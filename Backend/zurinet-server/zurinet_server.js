@@ -1,102 +1,12 @@
-import express from "express";
-import fetchNews from "./newsAPI.js"; // your NewsAPI fetch
-// import { extractLocationsWithSpaCy } from "./redZoneData.js"; // Python spaCy (if still used)
-import { extractLocationsFromArticles } from "./extractLocations.js"; // JS extraction
-import { rankLocations } from "./rankLocations.js";
+//Import Express.js using the require keyword
+//Initialise an express app by calling the express function
+//Import the getNews function from the newsAPI.js
 
+const express = require("express");
 const app = express();
+import { getNews } from "./newsAPI";
 
-app.get("/redZoneData", async (req, res) => {
-  try {
-    console.log("Fetching GBV articles from South Africa...");
-    const SA_LOCATIONS = [
-      "south africa",
-      "johannesburg",
-      "pretoria",
-      "cape town",
-      "durban",
-      "soweto",
-      "hillbrow",
-      "alexandra",
-      "mamelodi",
-      "umlazi",
-      "khayelitsha",
-      "bloemfontein",
-      "rustenburg",
-      "gqeberha",
-    ];
-
-    const articles = await fetchNews("everything", {
-      q: "(gender based violence OR GBV OR domestic violence OR sexual violence) AND (South Africa OR Johannesburg OR Pretoria OR Cape Town OR Durban OR Soweto OR Hillbrow OR Alexandra OR Mamelodi OR Umlazi OR Khayelitsha OR Bloemfontein OR Rustenburg OR Gqeberha)",
-      from: "2025-07-08",
-      to: "2025-08-08",
-      language: "en",
-      sortBy: "relevancy",
-      page: 1,
-      pageSize: 100,
-    });
-
-    console.log(articles);
-
-    const validArticles = articles.filter((article) => {
-      if (
-        !(
-          article.title &&
-          article.description &&
-          article.content &&
-          article.content !== "[Removed]"
-        )
-      ) {
-        return false;
-      }
-      const combinedText = (
-        article.title +
-        " " +
-        article.description +
-        " " +
-        article.content
-      ).toLowerCase();
-
-      return SA_LOCATIONS.some((location) => combinedText.includes(location));
-    });
-
-    console.log(`${validArticles.length} articles have valid content.`);
-
-    console.log("Extracting locations from articles...");
-    // If you still want to use Python spaCy:
-    // const locations = await extractLocationsWithSpaCy(validArticles);
-
-    // Using JS compromise extraction:
-    const locations = extractLocationsFromArticles(validArticles);
-
-    console.log(`Extracted ${locations.length} unique locations.`);
-
-    console.log("Ranking locations...");
-    const ranked = rankLocations(locations, validArticles);
-    console.log("Ranking complete.");
-
-    res.json({
-      redZones: ranked,
-      metadata: {
-        totalArticles: articles.length,
-        validArticles: validArticles.length,
-        locationsFound: locations.length,
-        fetchedAt: new Date().toISOString(),
-      },
-    });
-  } catch (error) {
-    console.error("Error processing red zone data:", error);
-    res.status(500).json({
-      error: "Error processing red zone data",
-      message: error.message,
-    });
-  }
-});
-
+//Define a default route for a GET request
 app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
-app.listen(3001, () =>
-  console.log("Server running on port http://localhost:3001/")
-);
+    res.send("This is the default route!, Hello World!")
+})
