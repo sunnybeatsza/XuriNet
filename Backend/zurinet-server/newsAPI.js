@@ -1,4 +1,6 @@
 // Link to article = https://www.freecodecamp.org/news/make-api-calls-in-javascript/
+import dotenv from "dotenv"
+dotenv.config()
 
 // 1. API Construction
 
@@ -9,7 +11,7 @@ const Inital_API_URL = "https://newsapi.org/v2/everything"
 const query = "?q=South Africa&"
 
 // Define API Key
-const Final_API_URL = "apiKey=" + process.env.NEWS_API_KEY
+const Final_API_URL = Inital_API_URL + query + "apiKey=" + process.env.NEWS_API_KEY
 
 
 
