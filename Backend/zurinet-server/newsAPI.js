@@ -1,5 +1,7 @@
 // Link to article = https://www.freecodecamp.org/news/make-api-calls-in-javascript/
+import { error } from "console"
 import dotenv from "dotenv"
+import fs from "fs"
 dotenv.config()
 
 // 1. API Construction
@@ -29,12 +31,24 @@ export async function getNews() {
         const data = await response.json()
 
         //for dev purposes, make sure to print it to check if response is correct.
-        console.log(data)
+        createFile(data)
         
         }
         //IMPORTANT = Always handles any errors throw in the code to avoid code crashes.
         catch (error) {
             console.error('Error:', error);
   }
+}
+
+function createFile(newsData) {
+    const articles = newsData.articles || [];
+    const lines = articles.map(article => JSON.stringify(article));
+    fs.writeFile("newsData.txt", lines.join('\n\n'), (error) => {
+        if (error) {
+            console.error("Error writing to file:", error)
+            return;
+        }
+        console.log("File written successfully!")
+    })
 }
 
