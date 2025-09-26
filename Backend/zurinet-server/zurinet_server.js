@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 
 //Define a custom news route
 app.get("/newsAPI", async (req, res) => {
-    const newsData = await getNews();
+    const newsData = await getNews("Pretoria");
     res.send(newsData)
 })
 
