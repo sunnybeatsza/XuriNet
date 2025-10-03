@@ -6,6 +6,8 @@ import os
 from regex_search import extract_locations  # Your regex rules
 
 sample_data_folder = "./zurinet-server/sampleDataSet"
+
+# This line of code grabs all files that end with .pdf in the sample_data_folder
 pdf_files = glob.glob(os.path.join(sample_data_folder, "*.pdf"))
 
 def get_output_txt_path(pdf_path):
@@ -24,6 +26,8 @@ def extract_pdf_data(pdf_file):
             else:
                 # OCR fallback for scanned pages
                 print(f"OCR needed for page {i+1} in {pdf_file}")
+
+                # This line of code converts the page into an image for extraction of scanned text.
                 images = convert_from_path(pdf_file, first_page=i+1, last_page=i+1)
                 ocr_text = pytesseract.image_to_string(images[0])
                 text.append(ocr_text + "\n\n")
@@ -32,6 +36,9 @@ def extract_pdf_data(pdf_file):
 
 for pdf_file in pdf_files:
     full_text = extract_pdf_data(pdf_file)
+
+    print(full_text)
+    
     extracted_locations = extract_locations(full_text)
     output_txt_file = get_output_txt_path(pdf_file)
     with open(output_txt_file, "w", encoding="utf-8") as f:
