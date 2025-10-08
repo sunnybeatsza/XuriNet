@@ -10,7 +10,7 @@
     "nodemon": "^3.1.10"
   },
   "scripts": {
-    "start": "node zurinet_server.js",
-    "dev": "nodemon zurinet_server.js"
+    "start": "node xurinet_server.js",
+    "dev": "nodemon xurinet_server.js"
   }
 }
