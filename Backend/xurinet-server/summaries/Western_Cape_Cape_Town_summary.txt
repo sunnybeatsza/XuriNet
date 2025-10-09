@@ -1,0 +1,23 @@
+This document details the appeal judgment in the case of Khanyile Ramba (Appellant) against the State, heard in the High Court of South Africa (Western Cape Division, Cape Town).
+
+The Appellant was convicted in the Hermanus Regional Court of **premeditated murder** (relying on section 51(1) of the Criminal Law Amendment Act, 105 of 1997) and sentenced to **life imprisonment**. He was also charged with rape and malicious damage to property but pleaded not guilty to those; his guilty plea to murder was recorded as formal admissions but he maintained it was not premeditated.
+
+**Key Facts and Evidence Presented:**
+
+*   **Appellant's Admissions/Version:** He admitted to hitting his girlfriend, S[...] M[...], with a hammer, causing her death. He claimed he confronted her about stolen cell phones, they fought, she hit him, and he retaliated by hitting her multiple times with a hammer until she fell. He left her on the floor and later found her deceased. He admitted causing death in the form of *dolus eventualis* (foreseeing the possibility of death but proceeding anyway).
+*   **Pathologist's Evidence (Dr. Louise Marie Kruger):** Found widespread blunt trauma to the deceased's head, body, and extremities. The cause of death was traumatic brain injury. Crucially, she found **significant trauma to the vulva and vaginal canal**, indicative of resistance, and consistent with injuries inflicted by a blunt object like a hammer. All injuries were inflicted within 24 hours.
+*   **State Witness Evidence (Zine Mankankela):** Testified that the Appellant had previously assaulted the deceased by slapping her, causing her to fall and hit her head. She also described the Appellant returning with a hammer.
+
+**Appellant's Grounds for Appeal:**
+
+*   **Conviction:** The trial court erred in finding the murder was premeditated (arguing it should have been under section 51(2) of the CLAA, which carries a lesser minimum sentence).
+*   **Sentence:** The life imprisonment sentence was excessively harsh. The trial court failed to give adequate weight to his personal circumstances (age, first offender, guilty plea, remorse, alcohol use) and the two years and three months he spent awaiting trial.
+
+**High Court's Decision and Reasoning:**
+
+The High Court **dismissed the appeal** in respect of both conviction and sentence.
+
+*   **On Conviction (Premeditation):** The Court found that premeditation does not require long planning; even a few minutes can be sufficient. It determined that the Appellant's actions, including prior assaults, his expressed anger, and the nature of the deceased's injuries (multiple, severe, and encompassing brain and genital trauma inflicted with a hammer), indicated a "thought process" and calculated harm rather than an instantaneous, impulsive act. The pathologist's detailed evidence, especially regarding the genital injuries indicative of resistance, was pivotal. The Court found the evidence of the State witness, Zine Mankankela, to be reliable despite minor discrepancies.
+*   **On Sentence:** The Court upheld the trial court's finding that there were no substantial and compelling circumstances to justify a deviation from the prescribed minimum sentence of life imprisonment for premeditated murder. While acknowledging the Appellant's personal circumstances (age, first offender, alcohol), the Court **was not convinced of genuine remorse**. It noted that the Appellant's plea explanation and testimony were "selective," "watered-down," and inconsistent with the full extent of his actions, particularly regarding the horrific genital injuries, failing to take full responsibility. The Court also concluded that the omission to explicitly refer to the time spent awaiting trial was not a material misdirection in light of the totality of the evidence.
+
+The Court emphasized the heinous and brutal nature of the crime.

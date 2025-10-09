@@ -1,0 +1,17 @@
+This document is a High Court judgment from the KwaZulu-Natal Local Division, Durban, regarding an application by Prabashnee Naidoo (the Applicant) against the South African Fraud Prevention Service (SAFPS) and others.
+
+**Key Points:**
+
+*   **Applicant's Goal:** The Applicant sought a final interdict to remove her fraud listing from the SAFPS database.
+*   **Background:** The listing arose from information provided by the Second and Third Respondents. While the Applicant was subject to a criminal investigation, the National Prosecuting Authority (NPA) issued a nolle prosequi decision (declined to prosecute) in January 2024. The Applicant lodged a complaint with the National Credit Regulator (NCR) in May 2024 and formally applied to SAFPS for removal in June 2024, which SAFPS refused, advising her of remedies with the NCR or Ombudsman.
+*   **Applicant's Argument:** She argued that the nolle prosequi established a clear right to removal, that she suffered prejudice (e.g., denied vehicle finance), and that the NCR process was ineffective, leaving no adequate alternative remedy. She believed she was challenging the *initial listing*, not SAFPS's *refusal* to delist her, and therefore an interdict was appropriate, not a Rule 53 review.
+*   **Third Respondent's Opposition (CSG Security, who provided the initial information):** The Third Respondent argued that the application was procedurally flawed as it should have been a Rule 53 review of SAFPS's *refusal to delist*, not an interdict. They also contended that the Applicant failed to exhaust adequate alternative statutory remedies (NCR, Ombudsman) *after* SAFPS's refusal. Finally, they argued that a nolle prosequi is not an acquittal and does not automatically entitle one to delisting, and that the Applicant failed to positively assert her innocence of fraud.
+*   **Court's Decision:** Justice Masipa dismissed the application with costs payable by the Applicant to the Third Respondent.
+*   **Reasons for Dismissal:**
+    1.  **Procedural Misconception:** The Court found the Applicant was effectively challenging SAFPS's refusal to delist her (a statutory determination), which should have been brought as a Rule 53 review, not an interdict.
+    2.  **Failure to Exhaust Remedies:** The Applicant did not pursue the statutory remedies available under the National Credit Act (NCA) through the NCR or Ombudsman *after* SAFPS refused her request for delisting. Her earlier NCR complaint was lodged *before* SAFPS's decision.
+    3.  **Effect of Nolle Prosequi:** A nolle prosequi is not an acquittal and does not automatically expunge suspicion of fraud or bar civil proceedings; it does not equate to a finding of innocence for the purpose of a fraud listing.
+    4.  **Substantive Merits:** The Applicant failed to positively allege her innocence, even when challenged.
+    5.  **Constitutional Rights:** While constitutional rights are important, the NCA provides a regulatory framework and statutory remedies that must be exhausted first.
+
+In essence, the Court ruled that the Applicant chose the wrong legal procedure, failed to use available alternative remedies, and incorrectly interpreted the legal effect of a nolle prosequi on her fraud listing.

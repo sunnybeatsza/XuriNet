@@ -1,0 +1,15 @@
+The Supreme Court of Appeal (SCA) heard an appeal by Treasure Moremi against the Gauteng Division of the High Court's refusal to grant her leave to appeal a ten-year imprisonment sentence. This sentence was imposed by a Regional Court for her conviction of fraud amounting to R10,619,677.85.
+
+Moremi, a director and shareholder of Denmag Trading (Pty) Ltd, was found guilty of fraudulently submitting 32 claims for 533 "ghost" employees to the Temporary Employee/Employer Relief Scheme (TERS) during the 2020 Covid-19 lockdown. The substantial funds obtained were used for company assets and personal property. Although she later repaid R3.5 million, she initially attributed the overpayment to a "mistake or error" before pleading guilty at trial. The fraud fell under legislation prescribing a minimum sentence of 15 years' imprisonment for first offenders, unless "substantial and compelling circumstances" were present.
+
+The trial court acknowledged mitigating factors, including her first offender status and personal circumstances, and found "substantial and compelling circumstances" to deviate from the 15-year minimum, imposing a sentence of ten years' imprisonment. Her subsequent applications for leave to appeal, first to the trial court and then a petition to the High Court, were both refused.
+
+The core issue before the SCA was whether the High Court erred in refusing leave to appeal, specifically if Moremi had "reasonable prospects of success" that her sentence would be altered on appeal. The SCA concluded that the High Court was correct in its refusal, finding that:
+*   The trial court committed no material misdirection and thoroughly considered all relevant factors, including the seriousness of the crime, the appellant's personal circumstances, and the interests of society.
+*   The pre-sentence report's claims (e.g., appellant being in "panic mode" or acting "out of character") were not supported by evidence, as her company had sufficient funds, and the fraud was meticulous, repeated, and for personal gain.
+*   Her initial representation of the fraud as a "mistake or error" indicated a lack of genuine remorse.
+*   While a first offender, the repeated and deliberate nature of the fraud diminished the mitigating weight of this factor.
+*   Concerns about her children's welfare were addressed, as her husband and extended family could provide care during her incarceration.
+*   The trial court's decision for a custodial sentence was appropriate, emphasizing the need for rigorous punishment for "white-collar" crime, which impacts society and requires effective deterrence, as articulated in *S v Sadler*.
+
+The SCA therefore found no reasonable prospects that a court of appeal would interfere with the imposed sentence and **dismissed** Moremi's appeal.

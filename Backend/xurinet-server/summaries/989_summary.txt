@@ -1,0 +1,23 @@
+This document is a High Court judgment from the Gauteng Division, Pretoria, concerning an application by Ms. Lindiwe Busangani Nkosi (Applicant) against the Legal Practitioners Fidelity Fund (First Respondent). The Legal Practice Council (Second Respondent) and the Road Accident Fund (Third Respondent) were also cited but did not oppose the application.
+
+**Background:**
+Ms. Nkosi, an indigent 54-year-old widow, was involved in a motor vehicle accident in 2015. Her attorneys, Chueu Inc Attorneys, settled her Road Accident Fund (RAF) claim for R617,115.91 in 2019. Chueu Inc Attorneys, however, never paid this amount to Ms. Nkosi, having misappropriated the funds.
+
+Ms. Nkosi lodged a claim with the Fidelity Fund on 31 October 2022, seeking compensation for her pecuniary loss due to the theft by her former attorneys. The Fund, after various requests for documentation and information, including Ms. Nkosi's bank statements and proof of payment from the Sheriff to Chueu Inc, finally received all the requested information by June 2024. During this period, Ms. Nkosi's new attorneys, Setaka Inc, learned from the Legal Practice Council (LPC) that Chueu Inc was under curatorship since December 2021, facing claims totaling R29 million with only R5 million in its trust account, and that Ms. Nkosi's money was not in the trust account. The LPC advised Ms. Nkosi to sue Chueu Inc's former directors personally, and the Fund would cover any remaining balance.
+
+Crucially, the Fidelity Fund itself **did not explicitly raise the requirement for Ms. Nkosi to first exhaust her remedies against Chueu Inc (known as "excussion") until its answering affidavit was filed in November 2024**, nearly two years after Ms. Nkosi lodged her claim. Before this, the Fund primarily focused on documentation and the calculation of the claim amount (agreeing to deduct 25% for attorney fees, bringing the total to R462,837). When Ms. Nkosi's attorneys pressed for a decision and threatened legal action, the Fund initially raised concerns about late lodgement of the claim before introducing the excussion requirement.
+
+**Legal Issue:**
+The core issue was whether Ms. Nkosi was required to first "excuss" against Chueu Inc Attorneys and its former directors before the Fund was obliged to pay her claim. This involved interpreting Section 79(1) of the Legal Practice Act, which states that the Fund "is not obliged to pay any portion of a claim which could reasonably be recovered from any other person liable." This differs from the repealed Attorneys Act, which had a more stringent "exhausted all available legal remedies" requirement.
+
+**Court's Reasoning:**
+1.  **Late Raising of Excussion:** The Court noted that the Fund failed to raise the excussion requirement earlier, despite numerous opportunities. This was only brought up in the answering affidavit, long after it would have been evident that Chueu Inc was hopelessly insolvent (under curatorship, R29 million liabilities, and facing liquidation in 2021).
+2.  **Reasonableness Test (Section 79(1) LPA):** Applying the "could reasonably be recovered" test, the Court found it was not reasonable to expect Ms. Nkosi, an indigent widow, to institute costly and protracted legal action against an insolvent firm and its directors, especially given the clear evidence of Chueu Inc's financial demise and the extensive claims against it (over R82 million from 116 claims).
+3.  **Fund's Obligation for Legal Costs:** The Fund's argument that Section 79(2) allows it to pay reasonable legal costs for excussion was dismissed because the Fund never made such a tender or even informed Ms. Nkosi of this option prior to the litigation.
+4.  **Precedent:** The Court distinguished previous judgments cited by the Fund, emphasizing that the "reasonableness" of excussion is fact-dependent and that in this case, pursuing Chueu Inc would have been futile.
+
+**Conclusion:**
+The Court found that Ms. Nkosi could not reasonably recover her loss from any other person liable. To expect her to pursue litigation against an insolvent entity with vast liabilities would be an unreasonable burden.
+
+**Order:**
+The Court ordered the Legal Practitioners Fidelity Fund to pay Ms. Nkosi an amount of R462,837 (the RAF settlement amount less 25% for attorney fees) within seven days into her attorneys' trust account, and to pay her legal costs.

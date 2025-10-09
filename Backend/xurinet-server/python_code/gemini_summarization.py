@@ -15,9 +15,18 @@ sample_data_folder = "./xurinet-server/sampleDataSet"
 summary_output_folder = "./xurinet-server/summaries"
 os.makedirs(summary_output_folder, exist_ok=True)
 
-pdf_files = glob.glob(os.path.join(sample_data_folder, "*.pdf"))
+# Search for PDFs in all dataset folders inside sampleDataSet
+dataset_folders = [os.path.join(sample_data_folder, d) for d in os.listdir(sample_data_folder) if os.path.isdir(os.path.join(sample_data_folder, d))]
+pdf_files = []
+for folder in dataset_folders:
+    pdf_files.extend(glob.glob(os.path.join(folder, "*.pdf")))
+
+rate_limit_seconds = 60
+estimated_total_seconds = len(pdf_files) * rate_limit_seconds
+estimated_mins, estimated_secs = divmod(estimated_total_seconds, 60)
 
 print(f"Starting processing of {len(pdf_files)} PDF(s)...\n")
+print(f"Estimated time to completion: {estimated_mins:02d}:{estimated_secs:02d} (at {rate_limit_seconds}s per file)\n")
 
 start_time = time.time()
 
@@ -112,7 +121,7 @@ for idx, pdf_file in enumerate(tqdm(pdf_files, desc="Processing PDFs"), start=1)
     # Live timer and delay for rate limiting
     print("⏳ Waiting 60 seconds for rate limit...")
     wait_start = time.time()
-    while time.time() - wait_start < 60:
+    while time.time() - wait_start < rate_limit_seconds:
         live_timer(start_time)
         time.sleep(1)
     print()  # Newline after timer

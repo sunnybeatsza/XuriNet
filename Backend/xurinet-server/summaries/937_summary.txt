@@ -1,0 +1,33 @@
+This document is a judgment from the High Court of South Africa, Gauteng Division, concerning an appeal against a summary judgment.
+
+**Case Overview:**
+*   **Appellant:** Gary Shaun Fine
+*   **Respondent:** Nedbank Limited
+*   **Matter:** An appeal against a summary judgment granted by the Magistrate's Court for the District of Johannesburg Central on 18 April 2024.
+
+**Background:**
+Nedbank asserted that Mr. Fine applied for a credit card in December 2020, which was approved, and an agreement was signed. Mr. Fine denied this, claiming he was living in Israel from July 2019 until August 2021, and therefore could not have signed the documents or used the card. He alleged that an unknown fraudster stole his personal documents and committed identity theft.
+
+**Magistrate's Court (Court a quo) Decision:**
+The Magistrate's Court granted summary judgment against Mr. Fine, citing two main reasons for dismissing his defense:
+1.  Perceived contradictions between Mr. Fine's plea and his affidavit regarding the dates he left for Israel.
+2.  "Huge repayments" visible on the bank statements, which the Magistrate found improbable if the account was fraudulent.
+
+**High Court's Findings on Appeal:**
+The High Court (Motha J) found that the Magistrate's Court erred and misdirected itself on both counts:
+
+1.  **Contradictions in Dates:** The High Court ruled there was no contradiction. The appellant's plea stating he spent "an extended period of time in the State of Israel" in 2020 was complementary, not contradictory, to his affidavit stating he left in July 2019. The key was that he was out of the country when the credit card application and initial transactions occurred (December 2020), returning only in August 2021.
+2.  **Huge Repayments:** The High Court found that the Magistrate "got it horribly wrong." The "large payments" cited (R169,311.87, R71,834.45, R174,458.36) were actually **opening balances** on the statements, not actual payments. Furthermore, all attempts at automatic payments (APO) were dishonoured and reversed, indicating no successful payments were made towards the outstanding amount.
+
+**Legal Principles Applied:**
+The High Court reiterated that the purpose of summary judgment is not to deprive a defendant with a *triable issue* or a *bona fide defence* of their day in court. It also emphasized that factual issues should generally not be resolved in motion proceedings.
+
+**Conclusion:**
+The High Court concluded that Mr. Fine had pertinently raised the issue of identity theft, which is a triable issue. His vehement denial of applying for or signing the agreement, coupled with his absence from the country during the relevant period, constituted a bona fide defence.
+
+**Order:**
+1.  The appeal is **upheld**.
+2.  The order of the Magistrate's Court is replaced with:
+    *   The application for summary judgment is **refused**.
+    *   The defendant (Gary Shaun Fine) is granted **leave to defend the action**.
+3.  The costs of the appeal and the summary judgment application are to be **costs in the cause** (meaning they will be decided at the final trial).

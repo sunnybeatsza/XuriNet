@@ -1,0 +1,36 @@
+This judgment from the Labour Court of South Africa deals with multiple interwoven applications arising from a review application launched by the Office of the Premier, Free State Province (Applicant) against Lebogang Godfrey Lesiu (First Respondent), an arbitrator (Second Respondent), and the General Public Service Sector Bargaining Council (Third Respondent).
+
+The core issue is the Applicant's request to **reinstate** its review application, which stalled because the audio recordings of the arbitration proceedings were lost, making it impossible to compile a complete record.
+
+Before addressing the reinstatement, the Court first dealt with two preliminary matters:
+
+1.  **Condonation for the Applicant's late Heads of Argument:** This was **granted**, as it was unopposed.
+2.  **An "irregular step" application and associated condonation:**
+    *   The First Respondent had filed a *confirmatory affidavit* from his attorney late and out of sequence in the main reinstatement application.
+    *   The Applicant challenged this as an "irregular step."
+    *   The First Respondent then filed his *answering affidavit to the irregular step application* late and sought condonation for this delay.
+    *   The Court found the First Respondent's explanation for the late filing (confusing court rules) to be "contrived" and "improbable."
+    *   The Court ruled that the late, out-of-sequence confirmatory affidavit *was* indeed an irregular step.
+    *   Therefore, **condonation for the First Respondent's late answering affidavit to the irregular step application was refused**, and the **confirmatory affidavit was set aside** as an irregular step.
+
+**Regarding the Reinstatement Application (the main issue):**
+
+*   **Background:** The Applicant's review application was launched on 5 April 2023. The arbitration recordings were lost by the arbitrator in February 2023, making reconstruction necessary. The Applicant's attorney claims he sought cooperation from the First Respondent's attorney to reconstruct the record, believing he would receive recordings. The First Respondent later asserted the review was "deemed withdrawn" or "archived" due to delays.
+*   **Legal Arguments:**
+    *   The Court clarified that under the new Rules, the 60-day period for filing a record only starts once a *complete* record is delivered, which hasn't happened. Thus, the application was **not deemed withdrawn**.
+    *   However, the application could be "archived" or "lapsed" under the old Practice Manual (Clause 11.2.7) for not having all papers filed within 12 months (April 2024). The Applicant therefore needed to show "good cause" for non-archiving.
+*   **Court's Reasoning for Reinstatement:**
+    *   **Delay Explanation:** The Court accepted the Applicant's attorney's explanation, attributing the primary delay to the lost record and the reasonable expectation of cooperation from the First Respondent's attorney in reconstruction. It emphasized the shared duty of both parties and the arbitrator to reconstruct a lost record.
+    *   **Prospects of Success:** The Court found that the Applicant had a "good chance of succeeding" in showing the arbitrator's decision (that the dismissal for misconduct was substantively unfair) was irrational or unreasonable, once the record is reconstructed.
+    *   **Prejudice:** The substantial security paid (over R1.8 million) by the Applicant ameliorated any prejudice to the First Respondent. Refusing reinstatement would effectively close the doors of justice to the Applicant.
+    *   **Interests of Justice:** Considering all factors, including constitutional rights to a fair hearing, the Court found that the interests of justice dictated that good cause was shown.
+
+**Order:**
+
+1.  Condonation for the Applicant's Heads of Argument was **granted**.
+2.  Condonation for the First Respondent's late Answering Affidavit to the Irregular Step application was **refused**.
+3.  The First Respondent's confirmatory affidavit was **set aside** as an irregular step.
+4.  Condonation for the Applicant's failure to meet the timeframes in the old Practice Manual (12-month rule) was **granted**.
+5.  The Applicant's review application was **reinstated**.
+6.  The Third Respondent (Bargaining Council) was **directed to schedule a reconstruction hearing** within 30 days, with all parties participating, and a reconstructed record to be filed within 60 days of the hearing.
+7.  Costs for these preliminary applications were ordered to be **costs in the main review application**.

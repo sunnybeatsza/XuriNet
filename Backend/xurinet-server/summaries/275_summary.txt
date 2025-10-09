@@ -1,0 +1,21 @@
+This document is a judgment from the High Court of South Africa regarding an appeal in the case of **Moloi v Minister of Police**.
+
+**Keitumetse Joyce Moloi** (the Appellant) had initially sued the **Minister of Police** (the Respondent) for damages for personal injuries. She claimed that on 20 January 2020, during a violent service delivery protest in Phuthaditjhaba, she was shot in the forehead with a rubber bullet by an unidentified member of the South African Police Service (SAPS), causing her to fall and fracture her right ankle. She asserted she was an innocent bystander, not involved in the protest, and that the police acted unlawfully or negligently.
+
+The original trial court dismissed Moloi's claim, finding she failed to prove her injuries were attributable to the SAPS. Moloi then appealed this decision.
+
+**Moloi's key arguments on appeal** were that the trial court:
+1.  Failed to give sufficient weight to her testimony that she was an innocent bystander shot on Rakitla Street, away from the main protest.
+2.  Incorrectly relied on hospital records not admitted into evidence, which stated she "fell" and hit her forehead, rather than being shot.
+3.  Relied on inadmissible evidence regarding rubber bullets.
+4.  Wrongly concluded she voluntarily assumed the risk, as she contended the police had placed her in the dangerous location after apprehending and releasing her.
+
+The **Minister of Police** (Respondent) denied liability, arguing that the violent protest occurred on Mampoi Road, not Rakitla Street where Moloi claimed she was shot. They maintained that SAPS members, who were not present on Rakitla Street, only used rubber bullets on Mampoi Road to disperse a large, aggressive crowd. The Minister also contended that Moloi had voluntarily placed herself in a dangerous situation, or if she was shot, it was on Mampoi Road as part of the rioting group, in which case the police's actions would have been justified.
+
+The **High Court, in its appeal judgment**, affirmed the trial court's decision. It found that Moloi, as the plaintiff, failed to prove her case on a balance of probabilities, particularly regarding the crucial **causal link** between the alleged shooting by a rubber bullet and her injuries. The court highlighted that:
+*   Moloi was a single witness to the shooting, and her witness did not corroborate the actual shooting.
+*   There was no evidence that an unknown SAPS member specifically aimed at or shot Moloi.
+*   It was considered highly improbable that a policeman would shoot an innocent person walking away from the main protest area, especially given the respondent's evidence that police operations were confined to Mampoi Road.
+*   Moloi herself testified she "felt a blow" and did not know what caused her injury, and there was no direct expert evidence to confirm a rubber bullet caused her forehead injury and subsequent fall leading to her ankle fracture.
+
+**Conclusion:** The appeal court found no basis to overturn the trial court's finding that Moloi did not prove her injuries were caused by a SAPS member's shooting. The appeal was **dismissed with costs**, including the costs for two counsels for the Minister of Police.
