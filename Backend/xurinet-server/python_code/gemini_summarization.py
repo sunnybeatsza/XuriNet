@@ -1,6 +1,7 @@
 import os
 import glob
 import time
+import sys
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
@@ -91,6 +92,19 @@ def process_pdf(pdf_file):
     else:
         print(f"⚠️ Gemini summarization returned empty response for {pdf_file}.")
 
+def process_pdf_and_return(pdf_file):
+    extracted_text = gemini_ocr_extract(pdf_file)
+    if not extracted_text:
+        extracted_text = extract_pdf_data(pdf_file)
+        if not extracted_text.strip():
+            print(f"No text could be extracted from {pdf_file}.", file=sys.stderr)
+            return
+    summary_text = gemini_summarize(extracted_text)
+    if summary_text:
+        print(summary_text)
+    else:
+        print("Gemini summarization returned empty response.", file=sys.stderr)
+
 def main():
     pdf_files = get_pdf_files(SAMPLE_DATA_FOLDER)
     estimated_total_seconds = len(pdf_files) * RATE_LIMIT_SECONDS
@@ -113,4 +127,8 @@ def main():
     print(f"\n🎉 All documents processed! Total time: {mins:02d}:{secs:02d}")
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1:
+        pdf_path = sys.argv[1]
+        process_pdf_and_return(pdf_path)
+    else:
+        main()
