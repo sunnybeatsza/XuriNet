@@ -5,12 +5,13 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
+    "multer": "^2.0.2",
     "newsapi": "^2.4.1",
     "node-fetch": "^3.3.2",
     "nodemon": "^3.1.10"
   },
   "scripts": {
-    "start": "node zurinet_server.js",
-    "dev": "nodemon zurinet_server.js"
+    "start": "node xurinet_server.js",
+    "dev": "nodemon xurinet_server.js"
   }
 }
