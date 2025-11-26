@@ -1,7 +1,3 @@
-//Import Express.js using the require keyword
-//Initialise an express app by calling the express function
-//Import the getNews function from the newsAPI.js
-// import { getNews } from "./newsAPI.js";
 import express from "express";
 import { execFile } from "child_process";
 import multer from "multer";
