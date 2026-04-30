@@ -35,7 +35,7 @@ def get_pdf_files(folder):
 def live_timer(start):
     elapsed = int(time.time() - start)
     mins, secs = divmod(elapsed, 60)
-    print(f"\r⏱️ Elapsed time: {mins:02d}:{secs:02d}", end="", flush=True)
+    print(f"\rElapsed time: {mins:02d}:{secs:02d}", end="", flush=True)
 
 def gemini_ocr_extract(pdf_file):
     prompt = "Extract all text from this document"
@@ -52,7 +52,7 @@ def gemini_ocr_extract(pdf_file):
         if response and response.text and response.text.strip():
             return response.text.strip()
     except Exception as e:
-        print(f"❌ Gemini OCR failed for {pdf_file}: {e}")
+        print(f"Gemini OCR failed for {pdf_file}: {e}")
     return ""
 
 def gemini_summarize(text):
@@ -65,7 +65,7 @@ def gemini_summarize(text):
         if response and response.text and response.text.strip():
             return response.text.strip()
     except Exception as e:
-        print(f"❌ Gemini summarization failed: {e}")
+        print(f"Gemini summarization failed: {e}")
     return ""
 
 def save_summary(pdf_file, summary_text):
@@ -73,10 +73,10 @@ def save_summary(pdf_file, summary_text):
     summary_path = os.path.join(SUMMARY_OUTPUT_FOLDER, base + "_summary.txt")
     with open(summary_path, "w", encoding="utf-8") as f:
         f.write(summary_text)
-    print(f"💾 Summary saved: {summary_path}")
+    print(f"Summary saved: {summary_path}")
 
 def process_pdf(pdf_file):
-    print(f"\n📄 Processing document: {pdf_file}")
+    print(f"\nProcessing document: {pdf_file}")
     extracted_text = gemini_ocr_extract(pdf_file)
     if not extracted_text:
         print("🔧 Using manual extraction...")
