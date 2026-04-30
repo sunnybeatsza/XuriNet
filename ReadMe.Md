@@ -1,6 +1,6 @@
 # **XuriNet**
 
-_An AI-powered platform to identify and alert users about high-risk areas for Gender-Based Violence in South Africa._
+_A crime data analytics application. It is meant to help citizens of South Africa make more informed decisions and be more aware by making crime intelligence more acessible.
 
 ## **Overview**
 
