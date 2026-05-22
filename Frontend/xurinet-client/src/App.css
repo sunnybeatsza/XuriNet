@@ -1,15 +1,10 @@
-.App-container {
-  display: flex;
-  flex-direction: column; /* Stack header and content vertically */
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh;
+.outer-container {
   background: #f7f7fa;
   font-family: "Segoe UI", Arial, sans-serif;
+  width: 100%;
 }
 
 .App-header {
-  width: 100%;
   background-color: #ffffff;
   color: #222;
   padding: 16px 32px;
@@ -22,24 +17,13 @@
   z-index: 1000;
 }
 
-.App-content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 32px; /* space between form and map */
-  padding: 32px;
-  width: 100%;
-  max-width: 1200px;
-}
-
 .redzone-checker-container {
   background: #fff;
   padding: 24px 32px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .map-container {
@@ -49,6 +33,7 @@
   height: 500px;
   width: 100%;
   max-width: 800px;
+  flex-grow: 1;
 }
 
 .google-map {
@@ -58,4 +43,11 @@
   border-radius: 8px;
   overflow: hidden;
   background: #e3e3e3;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 32px;
+  padding: 32px;
 }

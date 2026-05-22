@@ -39,7 +39,7 @@ function App() {
         setStatus("Error getting location");
         console.error(error);
       },
-      { enableHighAccuracy: true, maximumAge: 10000, timeout: 5000 }
+      { enableHighAccuracy: true, maximumAge: 10000, timeout: 5000 },
     );
     watchIdRef.current = watchId;
     setTracking(true);
@@ -55,16 +55,18 @@ function App() {
   };
 
   return (
-    <div className="App-container">
-      <div className="App-header">Welcome to ZuriNet</div>
+    <div className="outer-container">
+      <div className="App-header">Welcome to XuriNet</div>
 
-      <div className="App-content-container">
-        <div className="redzone-checker-container">
-          <RedZoneChecker setMapCoords={setMapCoords} />
-          <button onClick={tracking ? stopTracking : startTracking}>
-            {tracking ? "Stop Tracking" : "Track My Location"}
-          </button>
-          <p>Status: {status}</p>
+      <div className="main-container">
+        <div className="form-container">
+          <div className="redzone-checker-container">
+            <RedZoneChecker setMapCoords={setMapCoords} />
+            <button onClick={tracking ? stopTracking : startTracking}>
+              {tracking ? "Stop Tracking" : "Track My Location"}
+            </button>
+            <p>Status: {status}</p>
+          </div>
         </div>
 
         <div className="map-container">
